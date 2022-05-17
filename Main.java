@@ -7,9 +7,10 @@ class Main {
       Scanner skan = new Scanner(System.in);
       Service1 s = new Service1();
       int x=4;
-      String imie;
-      String nazwisko;
-      int wiek;
+      String name;
+      String forename;
+      int age;
+      String born;
       System.out.println("Witaj!");
       while(x!=0)
         {
@@ -20,13 +21,15 @@ class Main {
                 case 1:
                 {
                   Scanner skan1 = new Scanner(System.in);
-                  System.out.println("Podaj imie: ");
-                  imie=skan1.nextLine();
-                  System.out.println("Podaj nazwisko: ");
-                  nazwisko=skan1.nextLine();
-                  System.out.println("Podaj wiek: ");
-                  wiek=skan.nextInt();
-                  s.addStudent(new Student(imie, wiek));
+                  System.out.println("imie");
+                  name=skan1.nextLine();
+                  System.out.println("nazwisko");
+                  forename=skan1.nextLine();
+                  System.out.println("wiek ");
+                  age=skan.nextInt();
+                  System.out.println("Podaj date urodz");
+                  born=skan1.nextLine();
+                  s.addStudent(new Student(name, forename, age,born));
                 }break;
 
                 case 2:

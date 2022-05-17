@@ -13,7 +13,7 @@ class Main {
       System.out.println("Witaj!");
       while(x!=0)
         {
-          System.out.println("1-nowy student");
+          System.out.println("1-nowy student 2-wyswietl wszystkich");
           x=skan.nextInt();
           switch(x)
             {
